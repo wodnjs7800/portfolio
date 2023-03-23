@@ -17,7 +17,186 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <img src="images/favicon.png" alt="main">
+            <a href="#">Jaewon</a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li class="navbar__menu__item" data-link="#work">My work</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <div class="home__container">
+            <img src="images/profile.jpg" alt="Jaewon's profile photo" class="home__avatar">
+            <h1 class="home__title">Hello,<br> I'm Dream Coder</h1>
+            <h2 class="home__description">프론트엔드 개발자가 되기 위해 공부하고 있는 코더입니다.</h2>
+            <button class="home__contact">Contact me</button>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="section section__container">
+        <h1>About me</h1>
+        <p>비전공자 개발자이며 등등...</p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon"><i class="fa-brands fa-html5"></i></div>
+                <h2 class="major__title">HTML</h2>
+                <div class="major__description">HTML</div>
+            </div>
 
+            <div class="major">
+                <div class="major__icon"><i class="fa-brands fa-css3-alt"></i></i></div>
+                <h2 class="major__title">CSS</h2>
+                <div class="major__description">CSS</div>
+            </div>
+
+            <div class="major">
+                <div class="major__icon"><i class="fa-brands fa-square-js"></i></div>
+                <h2 class="major__title">Javacript</h2>
+                <div class="major__description">Javacript</div>
+            </div>
+
+            <div class="major">
+                <div class="major__icon"><i class="fa-brands fa-react"></i></div>
+                <h2 class="major__title">React</h2>
+                <div class="major__description">React</div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="images/konkuk.png" alt="knokuk" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">건국대학교</p>
+                    <p class="job__period">건국대학교</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="images/konkuk.png" alt="knokuk" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">건국대학교</p>
+                    <p class="job__period">건국대학교</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>공부중.. 새로운 환경 .. 적응 잘함 ..</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Javscript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>1</span></li>
+                            <li><span>2</span></li>
+                            <li><span>3</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>My work</h1>
+            <h3>Projects</h3>
+            <div class="work__categories">
+                <button class="category__btn selected" data-filter="*">
+                    All<span class="category__count">9</span></button>
+                <button class="category__btn" data-filter="1">
+                    1<span class="category__count">2</span></button>
+                <button class="category__btn" data-filter="2">
+                    2<span class="category__count">3</span></button>
+                <button class="category__btn" data-filter="3">
+                    3<span class="category__count">4</span></button>
+            </div>
+            <div class="work__projects">
+                <a href="" class="project" target="blank" data-type="1">
+                    <img src="" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>1231</h3>
+                        <span>1234</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">wodnjs7800@naver.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/wodnjs7800?tab=repositories" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p class="contact__rights">2023.</p>
+    </section>
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 </body>
 
 </html>
